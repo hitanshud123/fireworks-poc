@@ -8,7 +8,7 @@ exports.handler = async (event) => {
   try {
     const response = await axios.post('https://api.fireworks.ai/inference/v1/chat/completions', payload, {
       headers: {
-        'Authorization': `Bearer ${process.env.API_TOKEN}`,
+        'Authorization': `Bearer ${process.env.REACT_APP_API_TOKEN}`,
         'Content-Type': 'application/json'
       }
     });
