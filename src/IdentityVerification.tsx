@@ -88,12 +88,7 @@ const IdentityVerification: React.FC = () => {
         }],
       };
 
-      const headers = {
-        'Authorization': `Bearer ${process.env.REACT_APP_API_TOKEN}`,
-        'Content-Type': 'application/json'
-      };
-
-      const response = await axios.post('https://api.fireworks.ai/inference/v1/chat/completions', payload, { headers });
+      const response = await axios.post('/.netlify/functions/extract', { payload });
       console.log(response.data.choices[0].message.content);
       const responseData: IdentityInfo = JSON.parse(response.data.choices[0].message.content);
       setIdentityData(responseData);
