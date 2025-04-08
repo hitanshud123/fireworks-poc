@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import axios from 'axios';
 import { prompt } from './message.tsx';
-import { Box, Button, Typography, Card, Stack, Paper, Table, TableBody, TableCell, TableContainer, TableHead, TableRow, IconButton, Container, CircularProgress } from '@mui/material';
+import { Box, Button, Typography, Card, Stack, IconButton, Container, CircularProgress } from '@mui/material';
 import CloudUploadIcon from '@mui/icons-material/CloudUpload';
 import ReplayIcon from '@mui/icons-material/Replay';
 
