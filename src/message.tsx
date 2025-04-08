@@ -1,6 +1,5 @@
 export const prompt = `
-    I have provided an image of an ID. Please extract the document type, document number, full name, date of birth, expiry date, and address from this document, and return it in JSON format. 
-    Give me the exact values as they appear in the document, don't try to guess or make up values. 
+    I have provided an image of an ID. Please extract the document type, document number, full name, date of birth, expiry date, and address from this document
     If you are not sure about any of the fields, please leave it blank.
     If the field is not present in the document, please leave it blank.
     If you think that the image is not a valid ID, please return all fields as blank.
